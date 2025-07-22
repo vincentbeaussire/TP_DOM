@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Formulaire</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body class="light">
+
+<main id="form-container">
+    <h1>Formulaire</h1>
+
+    <!-- Pseudo -->
+    <section>
+        <label for="pseudo">Pseudo</label>
+        <input type="text" id="pseudo" placeholder="Entrez votre pseudo"/>
+        <span id="pseudo-error" class="error-msg"></span>
+    </section>
+
+    <!-- Description -->
+    <section id="description-section">
+        <p id="description-text"></p>
+        <button id="change-description">Changer de description</button>
+    </section>
+
+    <!-- Avatar -->
+    <section id="avatars">
+        <p>Choisissez votre avatar :</p>
+        <div class="avatar-options">
+            <img src="https://lesjours.fr/ressources/res1500/square/people/claude-gueant-kadhafi.jpeg" alt="Avatar 1" class="avatar" data-id="1"/>
+            <img src="https://everlaw-tax.fr/wp-content/uploads/2021/12/cope.jpg" alt="Avatar 2" class="avatar" data-id="2"/>
+            <img src="https://media.vanityfair.fr/photos/60d37ab1c028621524846862/4:3/w_632,h_474,c_limit/nicolas_sarkozy_cover_vf_1409.jpeg" alt="Avatar 3" class="avatar" data-id="3"/>
+        </div>
+    </section>
+
+    <!-- Bouton suivant -->
+    <button id="next-btn" disabled>Suivant</button>
+</main>
+
+<!-- Thème -->
+<footer>
+    <button id="theme-toggle">Changer de thème</button>
+</footer>
+
+<section id="profile-card" class="hidden"></section>
+
+<script src="script.js"></script>
+</body>
+</html>

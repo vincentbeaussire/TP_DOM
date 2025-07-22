@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 2rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+body.light {
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+body.dark {
+    background-color: #1e1e1e;
+    color: #f4f4f4;
+}
+
+h1 {
+    text-align: center;
+}
+
+section {
+    margin: 1rem 0;
+}
+
+input {
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+.error-msg {
+    color: red;
+    font-size: 0.9rem;
+}
+
+#avatars .avatar-options {
+    display: flex;
+    gap: 1rem;
+}
+
+.avatar {
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+    transition: transform 0.2s, border 0.2s;
+}
+
+.avatar:hover {
+    transform: scale(1.1);
+}
+
+.avatar.selected {
+    border: 2px solid #010609;
+    box-shadow: 0 0 5px #010609;
+}
+
+#next-btn:disabled {
+    background: #343333;
+    color: white;
+    cursor: not-allowed;
+}
+
+#next-btn {
+    padding: 0.8rem 2rem;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+footer {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+#profile-card {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 8px;
+    margin-top: 2rem;
+}
+
+#profile-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.hidden {
+    display: none;
+}
