@@ -17,6 +17,15 @@ const body = document.body;
 const formContainer = document.getElementById("form-container");
 const profileCard = document.getElementById("profile-card");
 
+pseudoInput.addEventListener("input", () => {
+    localStorage.setItem("pseudo", pseudoInput.value);
+})
+
+window.addEventListener("DOMContentLoaded", () => {
+    const saved = localStorage.getItem("pseudo");
+    if (saved) pseudoInput.value = saved;
+})
+
 let selectedAvatar = null;
 let isPseudoValid = false;
 
